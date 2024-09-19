@@ -17,14 +17,7 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
-alias i="yay -S"
-alias s="yay -Ss"
-alias u="yay -Syu"
-alias x="yay -R"
-alias pi="sudo pacman -S"
-alias ps="sudo pacman -Ss"
-alias pu="sudo pacman -Syu"
-alias px="sudo pacman -R"
+alias sudo="doas"
 alias cat="bat"
 alias ls="lsd -l"
 alias la="lsd -la"
