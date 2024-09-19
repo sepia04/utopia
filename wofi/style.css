@@ -1,0 +1,65 @@
+@import "/home/raikou/.cache/wal/colors-waybar.css";
+
+* {
+	font-family: JetBrainsMono Nerd Font;
+}
+
+window {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	border: 2px solid @color3;
+	font-size: 15px;
+	margin: 0px;
+}
+
+#input {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	border: 2px solid @color3;
+	box-shadow: none;
+	color: white;
+	margin: 10px 15px;
+	outline: none;
+}
+
+#input image {
+	color: white;
+}
+
+#inner-box {
+	border: none;
+	margin: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#outer-box {
+	border: none;
+	margin: 5px;
+}
+
+#scroll {
+	border: none;
+	margin: 0px;
+}
+
+#text {
+	border: none;
+	color: #ffffff;
+	margin: 5px;
+	padding: 3px 0px;
+}
+
+#entry:selected {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	border: 2px solid @color3;
+	font-weight: normal;
+	outline: none;
+}
+
+#text:selected {
+	border: none;
+	color: #ffffff;
+	font-weight: normal;
+}

@@ -1,0 +1,208 @@
+@import "/home/raikou/.cache/wal/colors-waybar.css";
+
+* {
+    font-family: Material Design Icons, FontAwesome, JetBrainsMono Nerd Font, Iosevka Nerd Font;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: rgba(26, 27, 38, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+#custom-logo,
+#workspaces,
+#window,
+#cpu,
+#memory,
+#temperature,
+#tray,
+#custom-swaync,
+#battery,
+#backlight,
+#pulseaudio,
+#network,
+#clock,
+#power-profiles-daemon,
+#custom-logout {
+    color: #e5e5e5;
+    padding: 0 10px;
+    background-color: #252733;
+    border-radius: 6px;
+    border-radius: 8px;
+
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8.5px;
+    margin-bottom: 8.5px;
+}
+
+#custom-logo {
+    padding-right: 20px;
+    padding-left: 14px;
+    font-size: 18px;
+    color: #7a95c9;
+}
+
+#workspaces:first-child {
+    padding-left: 0;
+}
+
+#workspaces:last-child {
+    padding-right: 0;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 6px;
+    border-radius: 8px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {
+    color: #ecd3a0;
+    transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.68);
+}
+
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#window {
+    color: #64727d;
+}
+
+#cpu {
+    color: #fb958b;
+}
+
+#memory {
+    color: #a1c999;
+}
+
+#temperature {
+    color: #59b1ef;
+}
+
+#backlight,
+#battery,
+#pulseaudio,
+#network {
+    background-color: #252733;
+    padding-left: 8px;
+    padding-right: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#tray {
+    font-size: 14px;
+}
+
+#custom-swaync {
+    color: #37c3c1;
+    padding-left: 10px;
+    padding-right: 16px;
+    font-size: 16px;
+}
+
+#battery {
+    color: #8fbcbb;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #5fec99;
+}
+
+#backlight {
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+#pulseaudio {
+    color: #81A1C1;
+    padding-left: 9px;
+    font-size: 12px;
+}
+
+#network {
+    color: #5E81AC;
+    padding-left: 10px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+
+#network.disconnected {
+    color: #fb958b;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+#clock {
+    color: #8a909e;
+}
+
+#power-profiles-daemon.performance {
+    padding-left: 12px;
+    padding-right: 15px;
+    color: #f53c3c;
+}
+
+#power-profiles-daemon.balanced {
+    padding-left: 9px;
+    padding-right: 18px;
+    color: #2980b9;
+}
+
+#power-profiles-daemon.power-saver {
+    padding-left: 10px;
+    padding-right: 17px;
+    color: #2ecc71;
+}
+
+#custom-logout {
+    padding-right: 20px;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #7a95c9;
+}
+
+tooltip {
+    font-family: JetBrainsMono Nerd Font;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #1f232b;
+}
+
+tooltip label {
+    font-family: JetBrainsMono Nerd Font;
+    padding: 5px;
+}
+
+label:focus {
+    background-color: #1f232b;
+}

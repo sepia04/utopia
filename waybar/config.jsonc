@@ -1,0 +1,141 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 2,
+
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "cpu",
+        "memory",
+        "temperature"
+    ],
+    "modules-right": [
+        "tray",
+        "custom/swaync",
+        "battery",
+        "backlight",
+        "pulseaudio",
+        "network",
+        "clock",
+        "power-profiles-daemon",
+        "custom/logout"
+    ],
+
+    "custom/logo": {
+        "format": "",
+        "on-click": "wofi --show drun",
+        "on-click-right": "pkill wofi",
+        "tooltip": false
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+        },
+        "persistent-workspaces": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5"
+        },
+        "sort-by-number": true
+    },
+    
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": true
+    },
+    "memory": {
+        "format": " {}%",
+        "tooltip": true,
+        "tooltip-format": "{used:.1f}G"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": " {temperatureC}°C"
+    },
+
+    "custom/swaync": {
+        "format": "",
+        "on-click": "swaync-client -t",
+        "on-click-right": "swaync-client -C",
+        "tooltip": false
+    },
+    "battery": {
+        "interval": 10,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "format-charging": " {capacity}%"
+    },
+    "backlight": {
+        "format": "{icon}{percent}%",
+        "format-icons": ["󰃚 ", "󰃛 ", "󰃜 ", "󰃝 ", "󰃞 ", "󰃟 ", "󰃠 "]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": "{icon} ",
+        "format-muted": "{format_source} ",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "network": {
+        "format-wifi": "{icon}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+        "format-disconnected": "⚠",
+        "tooltip-format": "{essid} ({signalStrength}%) / {bandwidthTotalBytes}",
+        "on-click": "nm-applet"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "custom/logout": {
+        "format": "",
+        "on-click": "wlogout -p xdg",
+        "tooltip": false
+    }
+}

@@ -1,0 +1,16 @@
+import=["~/.cache/wal/colors-alacritty.toml"]
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "JetBrains Mono Nerd Font"
+style = "Regular"
+
+[window.padding]
+x = 0
+y = 0
+
+[window]
+opacity = 0.8
+blur = true
