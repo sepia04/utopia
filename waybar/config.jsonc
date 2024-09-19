@@ -1,7 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "width": 1530,
+    "height": 40,
     "spacing": 2,
 
     "modules-left": [
